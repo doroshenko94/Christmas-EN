@@ -714,17 +714,17 @@ animation: ded 25s linear infinite; /* 25s - время анимации, linear
   var driversData = [
     {
       "name": "JAYDEN",
-      "roadLength": 75000,
+      "roadLength": 100000,
       "position": 0
     },
     {
       "name": "SASHA",
-      "roadLength": 75000,
+      "roadLength": 100000,
       "position": 0
     },
     {
       "name": "CHRIS N",
-      "roadLength": 55000,
+      "roadLength": 50000,
       "position": 0
     },
 	{
@@ -739,7 +739,7 @@ animation: ded 25s linear infinite; /* 25s - время анимации, linear
     },
 	{
       "name": "BRIAN",
-      "roadLength": 5000,
+      "roadLength": 50000,
       "position": 0
     },
 	{
@@ -750,12 +750,12 @@ animation: ded 25s linear infinite; /* 25s - время анимации, linear
 	
 	{
       "name": "RYAN",
-      "roadLength": 20000,
+      "roadLength": 15000,
       "position": 0
     },
 	{
       "name": "TOM",
-      "roadLength": 405000,
+      "roadLength": 540000,
       "position": 0
     }
   ];
@@ -842,23 +842,23 @@ function moveCar(selectedDriver) {
 }
 
 // Обновляем позицию водителя Jayden
-driversData[0].position = 75000 / driversData[0].roadLength;
+driversData[0].position = 0 / driversData[0].roadLength;
 // Обновляем позицию водителя Sasha
-driversData[1].position = 49136 / driversData[1].roadLength;
+driversData[1].position = 0 / driversData[1].roadLength;
 // Обновляем позицию водителя Chris N
-driversData[2].position = 20170/ driversData[2].roadLength;
+driversData[2].position = 0/ driversData[2].roadLength;
 // Обновляем позицию водителя George
-driversData[3].position =  70200 / driversData[3].roadLength;
+driversData[3].position =  0 / driversData[3].roadLength;
 // Обновляем позицию водителя Adam
-driversData[4].position =  27493/ driversData[4].roadLength;
+driversData[4].position =  264/ driversData[4].roadLength;
 // Обновляем позицию водителя Brian
-driversData[5].position =  5000/ driversData[5].roadLength;
+driversData[5].position =  0/ driversData[5].roadLength;
 // Обновляем позицию водителя Maya
-driversData[6].position =  26421 / driversData[6].roadLength;
+driversData[6].position =  0 / driversData[6].roadLength;
 // Обновляем позицию водителя Ryan
-driversData[7].position =  6294 / driversData[7].roadLength;
+driversData[7].position =  0 / driversData[7].roadLength;
 // Обновляем позицию водителя Tom
-driversData[8].position =  308900 / driversData[8].roadLength;
+driversData[8].position =  0 / driversData[8].roadLength;
 
 moveCar(0); // Переместить автомобиль первого водителя
 moveCar(1); // Переместить автомобиль второго водителя
