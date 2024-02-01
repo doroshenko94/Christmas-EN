@@ -8,13 +8,13 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 24px;
+    margin-top: 44px;
 	z-index:-3;
   }
   .background-image {
     width: 200%;
-    height: 180px;
-    background-image: url("city.png");
+    height: 200px;
+    background-image: url("city2.png");
     position: absolute;
     left: 0;
     right: 0;
@@ -38,11 +38,11 @@
 
 .background-image {
     width: 200%;
-    height: 320px;
+    height: 280px;
     position: absolute;
     left: 0;
     right: 0;
-    bottom: 840px;
+    bottom: 820px;
     display: block;
     background-repeat: repeat-x;
     animation: city 35s linear infinite;
@@ -103,9 +103,9 @@ animation: night 45s linear infinite;
     border-radius: 30px;
     width: 280px;
     position: relative;
-    color: rgb(79, 193, 238);
+    color: rgb(224, 64, 1);
     z-index: 1;
-    top: 10px;
+    top: 133px;
     backdrop-filter: blur(3px); /* Добавляем размытие */
     background-color: rgba(0, 0, 0, 0.7);
     padding: 10px; /* Добавляем отступ для лучшего визуального эффекта */
@@ -120,7 +120,7 @@ animation: night 45s linear infinite;
     position: relative;
   }
   .road {
-    height: 90px;
+    height: 89px;
     width: 200%;
     background-image: url("road.jpg");
     background-repeat: repeat-x;
@@ -153,27 +153,8 @@ animation: night 45s linear infinite;
   
   .bushes {
   width: 200%; /* Занимает всю ширину контейнера дороги */
-  height: 200px; /* Высота кустов (можете изменить по своему усмотрению) */
-  background-image: url('grass1.png'); /* Путь к изображению с кустами */
-  background-repeat: repeat-x; /* Повторять изображение горизонтально */
-  position: absolute; /* Позиционируется относительно контейнера дороги */
-  bottom: 0; /* Прикрепить кусты к нижней части контейнера дороги */
-  z-index: 7; /* Разместить кусты за дорогой */
-  animation: bushes 15s linear infinite;
-	
-}
- @keyframes bushes {
-    0% {
-      transform: translateX(0%);
-    }
-    100% {
-      transform: translateX(-50%);
-    }
-  }
-  .bushes4 {
-  width: 200%; /* Занимает всю ширину контейнера дороги */
-  height: 200px; /* Высота кустов (можете изменить по своему усмотрению) */
-  background-image: url('grass2.png'); /* Путь к изображению с кустами */
+  height: 210px; /* Высота кустов (можете изменить по своему усмотрению) */
+  background-image: url('bushes.gif'); /* Путь к изображению с кустами */
   background-repeat: repeat-x; /* Повторять изображение горизонтально */
   position: absolute; /* Позиционируется относительно контейнера дороги */
   bottom: 0; /* Прикрепить кусты к нижней части контейнера дороги */
@@ -192,8 +173,8 @@ animation: night 45s linear infinite;
   
   .bushes1 {
   width: 200%; /* Занимает всю ширину контейнера дороги */
-  height: 200px; /* Высота кустов (можете изменить по своему усмотрению) */
-  background-image: url('grass11.png'); /* Путь к изображению с кустами */
+  height: 150px; /* Высота кустов (можете изменить по своему усмотрению) */
+  background-image: url('bushes1.gif'); /* Путь к изображению с кустами */
   background-repeat: repeat-x; /* Повторять изображение горизонтально */
   position: absolute; /* Позиционируется относительно контейнера дороги */
   bottom: 0; /* Прикрепить кусты к нижней части контейнера дороги */
@@ -212,8 +193,8 @@ animation: night 45s linear infinite;
   
   .bushes2 {
   width: 200%; /* Занимает всю ширину контейнера дороги */
-  height: 80px; /* Высота кустов (можете изменить по своему усмотрению) */
-  background-image: url('bushes2.png'); /* Путь к изображению с кустами */
+  height: 200px; /* Высота кустов (можете изменить по своему усмотрению) */
+  background-image: url('bushes2.gif'); /* Путь к изображению с кустами */
   background-repeat: repeat-x; /* Повторять изображение горизонтально */
   position: absolute; /* Позиционируется относительно контейнера дороги */
   bottom: 0; /* Прикрепить кусты к нижней части контейнера дороги */
@@ -230,18 +211,38 @@ animation: night 45s linear infinite;
     }
   }
   
+  
   .bushes3 {
   width: 200%; /* Занимает всю ширину контейнера дороги */
   height: 200px; /* Высота кустов (можете изменить по своему усмотрению) */
-  background-image: url('grass3.png'); /* Путь к изображению с кустами */
+  background-image: url('bushes3.gif'); /* Путь к изображению с кустами */
   background-repeat: repeat-x; /* Повторять изображение горизонтально */
   position: absolute; /* Позиционируется относительно контейнера дороги */
   bottom: 0; /* Прикрепить кусты к нижней части контейнера дороги */
-  z-index: 7; /* Разместить кусты за дорогой */
+  z-index: 0; /* Разместить кусты за дорогой */
   animation: bushes3 15s linear infinite;
 	
 }
  @keyframes bushes3 {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+  .bushes4 {
+  width: 200%; /* Занимает всю ширину контейнера дороги */
+  height: 210px; /* Высота кустов (можете изменить по своему усмотрению) */
+  background-image: url('bushes4.png'); /* Путь к изображению с кустами */
+  background-repeat: repeat-x; /* Повторять изображение горизонтально */
+  position: absolute; /* Позиционируется относительно контейнера дороги */
+  bottom: 0; /* Прикрепить кусты к нижней части контейнера дороги */
+  z-index: 7; /* Разместить кусты за дорогой */
+  animation: bushes4 15s linear infinite;
+	
+}
+ @keyframes bushes4 {
     0% {
       transform: translateX(0%);
     }
@@ -392,14 +393,14 @@ animation: night 45s linear infinite;
 }
 
   .flag {
-    width: 100px;
-    height: 100px;
+    width: 90px;
+    height: 90px;
     background-image: url('flag.gif');
     background-size: cover;
     position: absolute;
     top: 60px;
     right: 10px;
-    z-index: 5;
+    z-index: 10;
     visibility: visible;
     transform: translateY(-70%);
   }
@@ -418,7 +419,6 @@ animation: night 45s linear infinite;
   height: 80px; /* Автоматическая высота для сохранения пропорций */
   right: 320px;
   margin-top: 5px;
-  z-index:6;
 }
   
   select {
@@ -490,7 +490,8 @@ animation: night 45s linear infinite;
   background-repeat: no-repeat; /* Запретить повторение фона */
   width: 150px; /* Желаемая ширина изображения */
   height: 150px;
-  margin-top: -30px;
+  margin-top: -70px;
+  margin-left: 140px;
   z-index: 5;
 }
 
@@ -498,7 +499,7 @@ animation: night 45s linear infinite;
 </style>
 <audio id="carAudio" src="car_sound.mp3"></audio>
 <div class="grass-background"></div>
-<h1 class="header">Ice Age</h1>
+<h1 class="header">Marvel Heroes</h1>
 <div class="scrat"></div> <!--Белка-->
 <div class="background-image">
 </div>
@@ -548,7 +549,7 @@ animation: night 45s linear infinite;
       <div class="flag-text" id="flag-text0">VICTORY!</div>
     <div class="road" id="road1">
     </div>
-	<div class="bushes2"></div>
+	<div class="bushes"></div>
   </div>
   
   <div class="road-container">
@@ -596,7 +597,7 @@ animation: night 45s linear infinite;
       <div class="flag-text" id="flag-text3">VICTORY!</div>
 	  <div class="road" id="road4">
     </div>
-		<div class="bushes2"></div>
+		<div class="bushes3"></div>
   </div>
   
    <div class="road-container">
@@ -628,7 +629,7 @@ animation: night 45s linear infinite;
       <div class="flag-text" id="flag-text5">VICTORY!</div>
 	  <div class="road" id="road6">
     </div>
-	<div class="bushes1"></div>
+	<div class="bushes2"></div>
   </div>
   
   <div class="road-container">
@@ -644,7 +645,7 @@ animation: night 45s linear infinite;
       <div class="flag-text" id="flag-text6">VICTORY!</div>
 	  <div class="road" id="road7">
     </div>
-	<div class="bushes"></div>
+	<div class="bushes4"></div>
   </div>
   
    <div class="road-container">
@@ -660,7 +661,7 @@ animation: night 45s linear infinite;
       <div class="flag-text" id="flag-text7">VICTORY!</div>
 	  <div class="road" id="road8">
     </div>
-		<div class="bushes1"></div>
+		<div class="bushes3"></div>
   </div>
   
   <div class="road-container">
@@ -679,7 +680,7 @@ animation: night 45s linear infinite;
       <div class="flag-text" id="flag-text8">VICTORY!</div>
 	  <div class="road" id="road9">
     </div>
-    <div class="grass2"></div>
+    <div class="bushes2"></div>
   </div>
   
   </div>
@@ -688,12 +689,12 @@ animation: night 45s linear infinite;
   var driversData = [
     {
       "name": "JAYDEN",
-      "roadLength": 80000,
+      "roadLength": 100000,
       "position": 0
     },
     {
       "name": "SASHA",
-      "roadLength": 80000,
+      "roadLength": 100000,
       "position": 0
     },
     {
@@ -729,7 +730,7 @@ animation: night 45s linear infinite;
     },
 	{
       "name": "TOM",
-      "roadLength": 500000,
+      "roadLength": 540000,
       "position": 0
     }
   ];
@@ -815,23 +816,23 @@ function moveCar(selectedDriver) {
 }
 
 // Обновляем позицию водителя Jayden
-driversData[0].position = 43194 / driversData[0].roadLength;
+driversData[0].position = 0 / driversData[0].roadLength;
 // Обновляем позицию водителя Sasha
-driversData[1].position = 26198 / driversData[1].roadLength;
+driversData[1].position = 0 / driversData[1].roadLength;
 // Обновляем позицию водителя Chris N
-driversData[2].position = 8065 / driversData[2].roadLength;
+driversData[2].position = 0/ driversData[2].roadLength;
 // Обновляем позицию водителя George
-driversData[3].position =  75000 / driversData[3].roadLength;
+driversData[3].position =  0 / driversData[3].roadLength;
 // Обновляем позицию водителя Adam
-driversData[4].position =  32799 / driversData[4].roadLength;
+driversData[4].position =  0 / driversData[4].roadLength;
 // Обновляем позицию водителя Brian
-driversData[5].position =  27485 / driversData[5].roadLength;
+driversData[5].position =  0/ driversData[5].roadLength;
 // Обновляем позицию водителя Maya
-driversData[6].position =  32095 / driversData[6].roadLength;
+driversData[6].position =  0 / driversData[6].roadLength;
 // Обновляем позицию водителя Ryan
-driversData[7].position =  14301 / driversData[7].roadLength;
+driversData[7].position =  0 / driversData[7].roadLength;
 // Обновляем позицию водителя Tom
-driversData[8].position =  378649 / driversData[8].roadLength;
+driversData[8].position =  0 / driversData[8].roadLength;
 
 moveCar(0); // Переместить автомобиль первого водителя
 moveCar(1); // Переместить автомобиль второго водителя
